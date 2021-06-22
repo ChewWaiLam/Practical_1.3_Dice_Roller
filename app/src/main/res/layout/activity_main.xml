@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/txt_Result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_Roll"
@@ -23,31 +13,44 @@
         android:layout_height="wrap_content"
         android:text="@string/roll_label"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/txt_Result"
-        app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="@+id/txt_Result"
-        app:layout_constraintTop_toBottomOf="@+id/txt_Result"
-        app:layout_constraintVertical_bias="0.055" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DiceImageOne"
+        app:layout_constraintVertical_bias="0.069" />
 
     <Button
-        android:id="@+id/buttonCountUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:text="Count Up"
-        app:layout_constraintEnd_toEndOf="@+id/btn_Roll"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/btn_Roll"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Roll" />
-
-    <Button
-        android:id="@+id/buttonReset"
+        android:id="@+id/buttonClear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reset"
-        app:layout_constraintBottom_toTopOf="@+id/buttonCountUp"
         app:layout_constraintEnd_toEndOf="@+id/btn_Roll"
         app:layout_constraintStart_toStartOf="@+id/btn_Roll"
         app:layout_constraintTop_toBottomOf="@+id/btn_Roll" />
+
+    <ImageView
+        android:id="@+id/DiceImageOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382"
+        app:srcCompat="@drawable/empty_dice"
+        tools:src="@drawable/dice_1" />
+
+    <ImageView
+        android:id="@+id/DiceImageTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382"
+        app:srcCompat="@drawable/empty_dice"
+        tools:src="@drawable/dice_1" />/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
