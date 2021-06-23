@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         val rollbutton: Button = findViewById(R.id.btn_Roll)
 
         val btnClear: Button = findViewById(R.id.buttonClear)
-
+        
         rollbutton.setOnClickListener(){
             dice1 = RandomDice(dice1)
             dice2 = RandomDice(dice2)
